@@ -1,1 +1,1 @@
-[master branch ](https://seiberx.github.io/VpnShop/)
+[VpnShop](https://seiberx.github.io/VpnShop/)
