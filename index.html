@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="icon" href="images/icon16X16.png" type="image/png">
     <title>VPN Shop</title>
 </head>
 
@@ -19,11 +19,13 @@
     <!-- Navbar -->
     <div class="navbar">
         <!-- Brand or logo -->
-        <a href="index.html" class="brand">VPN Shop</a>
+         <div class="Vpn-Shop">
+            <img src="images/icon48X48.png" alt="VPN Shop's icon">
+            <a href="index.html" class="brand">VPN Shop</a>
+         </div>
 
         <!-- Navigation Links -->
         <div class="nav-links">
-            <a href="#home">Home</a>
             <a  data-toggle="collapse" href="#contact"  >
                 Contact
               </a>
@@ -41,10 +43,23 @@
     <h1 style="text-align: center;margin-bottom: 5%;text-decoration: underline;">
         List of VPNS
     </h1>
+
+    <div style="position: absolute; right: 0; bottom: 0; color: rgb(245, 189, 87); margin-right: 5px;">
+        <p>
+          Icons made by <a style="color: inherit;" href="https://freeicons.io/profile/6156">Reda</a> from <a style="color: inherit;" href="https://freeicons.io">Freeicons</a>.
+        </p>
+      </div>
+
     <div class="sortedtypes">
         
         <div class="windows">
-            <h2 style="font-size: 1.5rem;text-decoration: underline;">windows Version</h2>
+
+            <div class="text-behind-pic">
+                <h2 style="font-size: 1.5rem;text-decoration: underline;">windows Version</h2>
+                <img src="images/windows32X32.png" alt="Windows' icon">
+
+            </div>
+            
             <div>
                 <a class="links" href="vpns/biobio.windows.exe" download="biobio.windows.exe"> BiuBiu</a>
             </div>
@@ -59,8 +74,14 @@
                 <a class="links" href="vpns/privado.windows.exe" download="privado.windows.exe">PrivadoVPN</a>
             </div>
         </div>
+
          <div class="android">
-            <h2 style="font-size: 1.5rem;text-decoration: underline;">Android Version</h2>
+
+            <div class="text-behind-pic">
+                <h2 style="font-size: 1.5rem;text-decoration: underline;">Android Version</h2>
+                <img src="images/android32X32.png" alt="Android's icon">
+            </div>
+            
             <div>
                 <a class="links" href="vpns/biobio.android.apk" download="biobio.android.apk">BiuBiu</a>
             </div>
@@ -77,9 +98,10 @@
          </div>
 
          <div class="macos">
-            <h2 style="font-size: 1.5rem;text-decoration: underline;">
-                MacOs Version
-            </h2>
+            <div class="text-behind-pic">
+                <h2 style="font-size: 1.5rem; text-decoration: underline;">MacOs Version</h2>
+                <img src="images/apple32X32.png" alt="Apple's icon">
+            </div>
 
             <div class="links">
                 Coming soon ...
@@ -87,6 +109,7 @@
          
          
     </div>
+    
     
 </body>
 

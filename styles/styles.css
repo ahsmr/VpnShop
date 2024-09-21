@@ -88,3 +88,21 @@ body {
     margin: 0px ;
     padding: 0px;
 }
+
+.Vpn-Shop {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+
+}
+
+.Vpn-Shop img {
+    margin: auto;
+    width: 48px;
+    height: 48px;
+}
+.text-behind-pic {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
