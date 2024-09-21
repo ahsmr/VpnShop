@@ -92,17 +92,32 @@ body {
 .Vpn-Shop {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 0px;
+    height: 48px;
 
 }
 
 .Vpn-Shop img {
     margin: auto;
-    width: 48px;
+    width: auto;
+    vertical-align: middle;
     height: 48px;
 }
 .text-behind-pic {
     display: flex;
     flex-direction: row;
     gap: 5px;
+    align-items: center;
+    height: 32px;
+}
+
+.text-behind-pic h2 {
+    margin-right: 0;
+}
+
+.text-behind-pic img {
+    vertical-align: middle;
+    height: 32px;
+    width: auto;
 }
