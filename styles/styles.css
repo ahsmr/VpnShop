@@ -33,50 +33,24 @@
     gap: 10px;
 }
 
-/* Responsive design (for smaller screens) */
-@media screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar .nav-links {
-        flex-direction: column;
-        width: 100%;
-    }
-    .navbar a {
-        text-align: center;
-        width: 100%;
-    }
-
-    .custom-link {
-        background-color: black; /* Black background */
-        border-color: black; /* Black border (if applicable) */
-        color: white; /* White text color for contrast */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .sortedtypes {
-        flex-direction: column;
-        align-items: center; /* Center align items for a cleaner look */
-    }
-}
-
+/* Main VPN list section */
 .sortedtypes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0;
-    
-
+    padding: 10px;
 }
 
-.sortedtypes .windows,.android {
+/* Windows, Android, and Mac sections */
+.sortedtypes .windows, .android, .macos {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin: 5px;
 }
+
+/* Individual links styling */
 .links {
     display: inline-block;
     padding: 5px;
@@ -87,23 +61,26 @@
     text-decoration: none;
     margin-bottom: 10px;
 }
+
 .links:hover {
     background-color: wheat;
     text-decoration: none;
     color: brown;
 }
+
+/* Ensures the body has no extra margin or padding */
 body {
-    margin: 0px ;
+    margin: 0px;
     padding: 0px;
 }
 
+/* VPN Shop brand */
 .Vpn-Shop {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0px;
     height: 48px;
-
 }
 
 .Vpn-Shop img {
@@ -112,6 +89,8 @@ body {
     vertical-align: middle;
     height: 48px;
 }
+
+/* Text beside the image in each section */
 .text-behind-pic {
     display: flex;
     flex-direction: row;
@@ -128,4 +107,51 @@ body {
     vertical-align: middle;
     height: 32px;
     width: auto;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+    /* Stack VPN list items vertically */
+    .sortedtypes {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Make each section take the full width */
+    .sortedtypes .windows, 
+    .sortedtypes .android, 
+    .sortedtypes .macos
+     {
+        width: 90%; /* Adjust the width to make it fit on small screens */
+        margin: 10px 0;
+        text-align: flex-start; /* Center align text for better readability */
+        border: 2px double black;
+        border-radius: 15px;
+
+    }
+
+    /* Adjust link sizes for mobile view */
+    .links {
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .text-behind-pic {
+        margin-bottom: 10px;
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar a {
+        text-align: center;
+        width: 100%;
+    }
 }
