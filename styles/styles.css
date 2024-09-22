@@ -126,7 +126,7 @@ body {
         width: 90%; /* Adjust the width to make it fit on small screens */
         margin: 10px 0;
         text-align: flex-start; /* Center align text for better readability */
-        border: 2px double black;
+        border: 2px solid darkgoldenrod;
         border-radius: 15px;
 
     }
