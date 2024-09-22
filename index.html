@@ -13,8 +13,7 @@
 </head>
 
 
-<body style="background-color: rgb(248, 236, 213);margin-top: 0px;">
-
+<body style="background: linear-gradient(to right, rgb(253, 214, 144), rgb(250, 233, 202));margin-top: 0px;">
 
     <!-- Navbar -->
     <div class="navbar">
@@ -40,6 +39,10 @@
             </div>
             
             <a href="About.html">About</a>
+            <a id="smartphones-only" href="#windows-section">Windows Version </a>
+            <a id="smartphones-only" href="#android-section">Android Version </a>
+            <a id="smartphones-only" href="#macos-section">MacOs Version</a>
+
         </div>
     </div>
     <h1 style="text-align: center;margin-bottom: 5%;text-decoration: underline;">
@@ -50,7 +53,7 @@
 
     <div class="sortedtypes">
         
-        <div class="windows">
+        <div id="windows-section" class="windows">
 
             <div class="text-behind-pic">
                 <h2  style="font-size: 1.5rem;text-decoration: underline;">windows Version</h2>
@@ -71,9 +74,13 @@
             <div>
                 <a class="links" href="vpns/privado.windows.exe" download="privado.windows.exe">PrivadoVPN</a>
             </div>
+
+            <div>
+                <a class="links" href="vpns/supervpn.windows.apk" download="supervpn.windows.apk">Super VPN</a>
+            </div>
         </div>
 
-         <div class="android">
+         <div id="android-section" class="android">
 
             <div class="text-behind-pic">
                 <h2 style="font-size: 1.5rem;text-decoration: underline;">Android Version</h2>
@@ -103,7 +110,7 @@
             </div>
          </div>
 
-         <div class="macos">
+         <div id="macos-section" class="macos">
             <div class="text-behind-pic">
                 <h2 style="font-size: 1.5rem; text-decoration: underline;">MacOs Version</h2>
                 <img src="images/apple32X32.png" alt="Apple's icon">
@@ -111,11 +118,19 @@
 
             <div class="links">
                 Coming soon ...
-         </div>
+            </div>
 
+         </div>
          
          
     </div>
+
+    <div class="footer" s>
+        
+        <a id="smartphones-only" href="#">Jump to the top</a>
+    </div>
+
+
     
     
 </body>
