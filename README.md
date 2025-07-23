@@ -1,1 +1,1 @@
-[VpnShop](https://seiberx.github.io/VpnShop/)
+[VpnShop](https://ahsmr.github.io/VpnShop/)
